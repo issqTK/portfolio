@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@keyframes grain {
+    0%, 100% { transform: translate(0); }
+    10% { transform: translate(-5%,-10%); }
+    20% { transform: translate(-15%,5%); }
+    30% { transform: translate(7%,-25%); }
+    40% { transform: translate(-5%,25%); }
+    50% { transform: translate(-15%,10%); }
+    60% { transform: translate(15%); }
+    70% { transform: translateY(15%); }
+    80% { transform: translate(3%,35%); }
+    90% { transform: translate(-10%,10%); }
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.noise { position: fixed; z-index: 9999; top: -300%; left: -150%; height: 600%; width: 600%; -webkit-animation: grain 7s steps(10) infinite; animation: grain 7s steps(10) infinite; background-image: url(/images/noise.png); background-size: 200px; background-repeat: repeat; opacity: .25; pointer-events: none; }
+
+*{ font-family: 'Lato', sans-serif; box-sizing: border-box; transition: all .1s; margin: 0; padding: 0; }
+
+body{ -ms-overflow-style: none;  scrollbar-width: none; } 
+body::-webkit-scrollbar { display: none; }
+
+a { color: #606887; }
+
+/* Reset Colors */
+
+.lightBG { background-color: #f3f2f9!important; }
+
+.lightColor { color: #606887!important; }
+
+.darkBG { background-color: #2b2b33!important; }
+
+.darkColor { color: #f3f2f9!important; }
+
+.border-light{ border: 1px double #606887!important;  }
+
+.border-dark{ border: 1px double #2b2b33!important;  }
+
+.light-bg-nav { background-color: transparent; }
+
+.dark-bg-nav { background-color: transparent; }
+
+
+/*  */
+
+#header{  display: flex; justify-content: space-between; position: fixed;  top:15px; left:20px; right: 20px; z-index: 2; }
+
+#logo { height: 30px; } 
+
+#logo img { height: 100%; }
+
+#right-elements { display: flex; gap: 22px; align-items: center; }
+
+#dark, #light{ cursor: pointer; }
+
+/*  */
+
+#icon-nav{ position: relative; width: 30px; height: 30px; cursor: pointer; }
+
+#open { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; padding: 3.9px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.186); border-radius: 5px; background: #f3f2f9; }
+
+#open:hover span{ background-color: transparent; }
+
+#open:hover{ background-color: #f8fafc; }
+
+#open span{ width: 5px; height: 5px; border-radius: 50%; }
+
+#close { display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 80%; height: 80%; background-size: cover;}
+
+.icon-nav-close {background: url(/images/icon-nav-close.png)!important; background-size: cover!important;}
+
+.icon-nav-close:hover {background: url(/images/icon-nav-close-hover.png)!important; background-size: cover!important;}
+
+.icon-nav-close-light {background: url(/images/icon-nav-close-light.png)!important; background-size: cover!important;}
+
+.icon-nav-close-light:hover { background: url(/images/icon-nav-close-hover-light.png)!important; background-size: cover!important; }
+
+#nav { display: none; position: absolute; left: 4%; top:70px; }
+
+#nav div:first-child > img { position: absolute; right: -55%; height: 100%; animation: rotation 12s linear infinite; z-index: 1;}
+
+#nav > div:last-child  { min-width: 280px; }
+
+#nav a:hover { font-size: 3em; transform: rotate(5deg); }
+
+#nav a { display: block; font-family: 'Phudu', cursive; font-size:2.7em; font-weight: 700; text-transform: uppercase; line-height: 70px; letter-spacing: 3px; text-decoration: none; }
+
+#main{ position: relative; width:100%; min-height: 100vh; z-index: 1; }
+
+@media only screen and (min-width: 768px) {
+
+    #header{ margin:auto; top:80px; left:10%; right: 10%; right: none !important; }
+
+    #logo { height: 50px; }
+
+    #icon-nav{ width: 40px; height: 40px;}
+    
+    #open span{ width: 8px; height: 8px; }
+
+    #nav { left: 40%; top: 0; }
+
+    #nav div:first-child > img { position: absolute; left: -55%; height: 100%; animation: rotation 12s linear infinite; z-index: -1;}
+
+    #nav > div:last-child  { z-index: 1; padding: 0 10px; min-width: 280px;}
+
+    .light-bg-nav { background-color: #f3f2f9; }
+    
+    .dark-bg-nav { background-color: #2b2b33; }
+
+    #nav a:hover { font-size: 4em; }
+
+    #nav a { font-size: 3.5em; line-height: 80px; letter-spacing: 5px; }
+
+    #main{ width:100%; }
+}

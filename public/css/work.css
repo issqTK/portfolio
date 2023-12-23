@@ -1,0 +1,40 @@
+
+#contact { margin-inline: 5%; margin-top: 90px; display: flex; flex-direction: column; gap: 35px; }
+
+#contact .contact-infos { display: flex; flex-direction: column; gap: 25px; }
+
+#contact h1 { font-size: 2.5em; font-family: 'Phudu', cursive!important; }
+
+#contact .contact-infos > div { display: flex; flex-direction: column; gap: 15px; font-size: 1.1em; }
+
+#contact .contact-infos > div > span { display: flex; gap: 8px; align-items: center; background-color: white; padding: 8px; border-radius: 5px; width: auto; }
+
+#contact .contact-infos > div > img { width: 50%; display: none; }
+
+#contact form { display: flex; flex-direction: column; gap: 15px; }
+
+#contact input, #contact textarea { padding: 8px; border-radius: 5px; border: none; }
+
+#contact textarea { resize: none; }
+
+#contact input[type=submit] { background-color: #aab2d1; color: white; font-weight: bold; letter-spacing: .5px; cursor: pointer; }
+
+#contact input[type=submit]:hover { background-color: #606887; }
+
+#contact .errors { display: flex; flex-direction: column; gap: 8px; background-color: rgb(222, 53, 115); color: white; list-style-position: inside; padding: 25px; border-radius: 5px;}
+
+.is-invalid { border: 1px solid rgb(222, 53, 115)!important}
+
+.success { padding: 25px; border-radius: 5px; color: white; background-color: #606887 }
+
+@media only screen and (min-width: 768px) {
+    #contact { margin-top: 200px; margin-inline: 10%; flex-direction: row; justify-content: space-between; gap: 0; }
+
+    #contact h1 { font-size: 3.5em; }
+
+    #contact .contact-infos > div > span { width: 60%; }
+
+    #contact .contact-infos > div > img { display: block; }
+
+    #contact form { width: 50%; margin-top: 20px; }
+}
