@@ -21,3 +21,18 @@ Route::get('/work/{slug}', [SingleController::class, 'workView'])->name('work.vi
 
 Route::post('contact', [SingleController::class, 'contactPost'])->name('contact.post');
 
+Route::get('config', function() {
+    \Artisan::call('config:cache');
+    \Artisan::call('route:cache');
+    \Artisan::call('view:cache');
+
+    echo 'done';
+});
+Route::get('config-release', function() {
+    \Artisan::call('cache:clear');
+    \Artisan::call('config:clear');
+    \Artisan::call('route:clear');
+    \Artisan::call('view:clear');
+
+    echo 'done';
+});

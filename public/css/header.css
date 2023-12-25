@@ -43,9 +43,9 @@ a { color: #606887; }
 
 .border-dark{ border: 1px double #2b2b33!important;  }
 
-.light-bg-nav { background-color: transparent; }
+.light-bg-nav { background-color: #f3f2f9; }
 
-.dark-bg-nav { background-color: transparent; }
+.dark-bg-nav { background-color: #2b2b33; }
 
 
 /*  */
@@ -56,7 +56,7 @@ a { color: #606887; }
 
 #logo img { height: 100%; }
 
-#right-elements { display: flex; gap: 22px; align-items: center; }
+#right-elements { display: flex; gap: 22px; align-items: center; z-index: 10;}
 
 #dark, #light{ cursor: pointer; }
 
@@ -82,17 +82,18 @@ a { color: #606887; }
 
 .icon-nav-close-light:hover { background: url(/images/icon-nav-close-hover-light.png)!important; background-size: cover!important; }
 
-#nav { display: none; position: absolute; left: 4%; top:70px; }
+#nav { display: none; position: absolute; min-width: 220px; 
+    left: calc(50% - 170px); top:70px; }
 
-#nav div:first-child > img { position: absolute; right: -55%; height: 100%; animation: rotation 12s linear infinite; z-index: 1;}
+#nav div:first-child > img { position: absolute; right: -65%; height: 100%; animation: rotation 12s linear infinite; z-index: -1;}
 
-#nav > div:last-child  { min-width: 280px; }
-
-#nav a:hover { font-size: 3em; transform: rotate(5deg); }
+#nav > div:last-child  { min-width: 100%; padding: 0 10px; z-index: 1; }
 
 #nav a { display: block; font-family: 'Phudu', cursive; font-size:2.7em; font-weight: 700; text-transform: uppercase; line-height: 70px; letter-spacing: 3px; text-decoration: none; }
 
-#main{ position: relative; width:100%; min-height: 100vh; z-index: 1; }
+#nav a:hover { font-size: 2.6em; transform: rotate(5deg); transition: all .4s ease;}
+
+#main{ position: relative; width:100%; z-index: 1; }
 
 @media only screen and (min-width: 768px) {
 
@@ -101,22 +102,21 @@ a { color: #606887; }
     #logo { height: 50px; }
 
     #icon-nav{ width: 40px; height: 40px;}
-    
+
     #open span{ width: 8px; height: 8px; }
 
-    #nav { left: 40%; top: 0; }
+    /*  */
 
-    #nav div:first-child > img { position: absolute; left: -55%; height: 100%; animation: rotation 12s linear infinite; z-index: -1;}
+    #nav { left: 40%; top: 0; min-width: 290px; }
 
-    #nav > div:last-child  { z-index: 1; padding: 0 10px; min-width: 280px;}
+    #nav div:first-child > img { left: -55%;}
 
-    .light-bg-nav { background-color: #f3f2f9; }
-    
-    .dark-bg-nav { background-color: #2b2b33; }
 
-    #nav a:hover { font-size: 4em; }
+    #nav a:hover { font-size: 3.4em; }
 
     #nav a { font-size: 3.5em; line-height: 80px; letter-spacing: 5px; }
+
+    /*  */
 
     #main{ width:100%; }
 }

@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-#home { display: flex; flex-direction: column; gap: 20px; width: 90%; margin: 90px auto 0 auto; }
+#home { display: flex; flex-direction: column; gap: 55px; width: 90%; margin: 90px auto 0 auto;}
 
-#home > p.head { text-align: center; font-size: 2.2em; line-height: 40px; }
+#home > p.head { text-align: center; font-size: 2.6rem; line-height: 46px; }
 
 #home > p .text { font-family: 'Londrina Outline', cursive; }
 
 #home > p .name { font-family: 'Phudu', cursive; }
 
-#home > p.foot { text-align: center; font-size: 1.2em;}
+#home > p.foot { text-align: center; font-size: 1.2em; line-height: 31px;}
 
-#home > div { display: flex; justify-content: center; gap: 25px; }
+#home > div { display: flex; justify-content: space-between; }
 
 #home > div > a { text-decoration: none; font-size: 1.2em; font-weight: bold; display: flex; flex-direction: column; gap: 10px; }
 
@@ -171,13 +171,13 @@
 
 @media only screen and (min-width: 768px) {
     /* Home */
-    #home { width: 80%; gap: 40px; margin: 120px auto 0 auto;}
+    #home { width: 80%; margin: 120px auto 0 auto;}
 
     #home > p.head { font-size: 4.2em; line-height: 60px; }
 
     #home > p.foot { font-size: 1.4em;}
-#curo{display: none;}
-    #home > div { gap: 25px; }
+
+    #home > div { gap: 55px; justify-content: center;}
 
     #home > div > a { font-size: 1.4em;}
 
