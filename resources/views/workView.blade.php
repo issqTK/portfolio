@@ -14,8 +14,6 @@ else {
     $category = explode('=', explode("|", $work->category)[1])[1];
     $description = explode('=', explode("|", $work->description)[1])[1];
 }
-
-
 ?>
 
 <div id="work-view">
@@ -23,10 +21,15 @@ else {
         <img src="/images/work/preview/{{$work->preview}}">
     </div>
 
-    <div class="block">
-        <h1>{{ $work->name }}</h1>
+    <div id="block">
+        <div class="heading-important">
 
-        <hr>
+            <h1>{{ $work->name }}</h1>
+
+            <hr>
+       
+        </div>
+
         
         <div class="infos">
             <div>
@@ -48,11 +51,14 @@ else {
         </div>
 
         @if($work->name == 'Sam')
-        <div class="sam">
+        <div class="sam content">
             <div class="concept">
-                <h3> {{ __("Concept") }} </h3>
+                <div>
+                    <h3> {{ __("Concept") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <p>
                     {{ __( "The whole concept is built around a modular and adaptable system by making designs move themselves arround a noisy background." ) }}
@@ -68,9 +74,12 @@ else {
             </div>
 
             <div class="colors">
-                <h3> {{ __("Colors") }} </h3>
+                <div>
+                    <h3> {{ __("Colors") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <ul>
                     <li>
@@ -162,9 +171,12 @@ else {
             </div>
 
             <div class="typography">
-                <h3> {{ __("Typography") }} </h3>
+                <div>
+                    <h3> {{ __("Typography") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <div class="container">
                     <div>
@@ -196,9 +208,12 @@ else {
             </div>
 
             <div class="applications">
-                <h3>Applications</h3>
+                <div>
+                    <h3>Applications</h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <div>
                     <div class="item1"><img src="/images/work/sam/1.png"></div>
@@ -226,12 +241,15 @@ else {
         @endif
 
         @if($work->name == 'Lenergia')
-        <div class="lenergia">
+        <div class="lenergia content">
             <div class="page">
-                <h3>{{ __("Request Estimate") }}</h3>
+                <div>
+                    <h3>{{ __("Request Estimate") }}</h3>
 
-                <hr>
-                
+                    <hr>
+
+                </div>                
+
                 <img src="/images/work/lenergia/devis-1.png" alt="">
                 <img src="/images/work/lenergia/devis-2.png" alt="">
                 <img src="/images/work/lenergia/devis-3.png" alt="">
@@ -245,9 +263,12 @@ else {
             </div>
 
             <div class="page">
-                <h3> {{ __("Welcome Page") }} </h3>
+                <div>
+                    <h3> {{ __("Welcome Page") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <img src="/images/work/lenergia/lenergia-home.png" alt="">
 
@@ -255,9 +276,12 @@ else {
             </div>
 
             <div class="page">
-                <h3> {{ __("Landing Page") }} </h3>
+                <div>
+                    <h3> {{ __("Landing Page") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <img src="/images/work/lenergia/lenergia-landing.png" alt="">
 
@@ -265,9 +289,12 @@ else {
             </div>
 
             <div class="page">
-                <h3> {{ __("Responsive") }} </h3>
+                <div>
+                    <h3> {{ __("Responsive") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <div class="responsive">
                     <img src="/images/work/lenergia/lenergia.-resp-1.png" alt="">
@@ -285,11 +312,14 @@ else {
         @endif
 
         @if($work->name == 'Prixa')
-        <div class="prixa">
+        <div class="prixa content">
             <div >
-                <h3> {{ __("Prixa demo") }} </h3>
+                <div>
+                    <h3> {{ __("Prixa demo") }} </h3>
 
-                <hr>
+                    <hr>
+
+                </div>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/AZb_A2VeyR4?si=N7E1tETGifXbopWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -299,11 +329,14 @@ else {
         @endif
 
         @if($work->name == 'Pharmagarde')
-        <div class="pharmagarde">
+        <div class="pharmagarde content">
             <div class="page">
-                <h3> {{ __("Search Page") }} </h3>
+                                <div>
+                                    <h3> {{ __("Search Page") }} </h3>
 
-                <hr>
+                    <hr>
+
+                                </div>
 
                 <img src="/images/work/pharmagarde/pharmagarde4.png">
                 <img src="/images/work/pharmagarde/pharmagarde5.png">
@@ -312,9 +345,12 @@ else {
             </div>
 
             <div class="page">
-                <h3> {{ __("Welcome Page") }} </h3>
+                                <div>
+                                    <h3> {{ __("Welcome Page") }} </h3>
 
-                <hr>
+                    <hr>
+
+                                </div>
 
                 <img src="/images/work/pharmagarde/pharmagarde1.png" >
 
@@ -322,9 +358,12 @@ else {
             </div>
 
             <div class="page">
-                <h3> {{ __("About Page") }} </h3>
+                                <div>
+                                    <h3> {{ __("About Page") }} </h3>
 
-                <hr>
+                    <hr>
+
+                                </div>
 
                 <img src="/images/work/pharmagarde/pharmagarde2.png" >
 
@@ -332,9 +371,12 @@ else {
             </div>
 
             <div class="page">
-                <h3> {{ __("Contact Page") }} </h3>
+                                <div>
+                                    <h3> {{ __("Contact Page") }} </h3>
 
-                <hr>
+                    <hr>
+
+                                </div>
 
                 <img src="/images/work/pharmagarde/pharmagarde3.png" >
 
@@ -346,12 +388,15 @@ else {
         @endif
        
         @if($work->name == 'Formy')
-        <div class="formy">
+        <div class="formy content">
             <div class="page">
-                <h3> {{ __("Welcome Page") }} </h3>
+                                <div>
+                                    <h3> {{ __("Welcome Page") }} </h3>
 
-                <hr>
-                
+                    <hr>
+
+                                </div>
+
                 <img src="/images/work/formy/formy-1.png" >
 
                 <hr>

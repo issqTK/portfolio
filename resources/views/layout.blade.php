@@ -11,7 +11,8 @@
         <!-- Css  -->
         <link href="{{ asset('css/header.css') }}" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/work.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/workView.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
 
          <!-- Scripts -->
         <script src="{{ asset('js/jquery.min.js') }}"></script>

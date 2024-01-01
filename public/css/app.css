@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 #home { display: flex; flex-direction: column; gap: 55px; width: 90%; margin: 90px auto 0 auto;}
 
 #home > p.head { text-align: center; font-size: 2.6rem; line-height: 46px; }
@@ -72,102 +68,7 @@
 
 #displayer { background-size: cover; opacity: 0; border-top-right-radius: 25px; }
 
-/* Work View */
 
-#work-view { display: flex; flex-direction: column; gap: 40px; padding: 90px 5% 25px 5%; min-height: 100vh;}
-
-#work-view .header { display: flex; height:auto; overflow: hidden!important; border-radius: 20px;}
-
-#work-view .header img { width: 100%; }
-
-.block { display: flex; flex-direction: column; gap: 25px; font-size: 1.1em; }
-
-.block > h1 { font-family: Phudu, 'sans-serif'; font-size: 2.1em; }
-
-.block hr { border-top: 2px solid #aab2d1; }
-
-.block h3{ font-family: Phudu, 'sans-seruf'; font-size: 1.5em; }
-
-.block .visite { display: block; margin: auto; text-decoration: none; text-transform: uppercase; font-family:  Londrina, 'sans-serif'; }
-
-.block .pre-next .left{ float: left; }
-.block .pre-next .right{ float: right; }
-
-.block .pre-next > a { display: flex; align-items: center; gap: 8px; font-family: Londrina, 'sans-serif'; font-size: 1.1em; text-decoration: none; }
-
-.infos { display: flex; flex-direction: column; gap: 25px; font-size: 13px;}
-
-.infos .title { font-size: 1.5em; font-family: Londrina, 'sans-serif'; font-weight: bold; }
-
-.infos p { line-height: 30px; word-break: break-word; text-align: justify; }
-
-.infos > div:first-child { display: flex; flex-wrap: wrap; row-gap: 25px; align-items: flex-start;}
-
-.infos span { width: 50%;}
-
-.block .sam, .block .pharmagarde, .block .lenergia, .block .formy, .block .prixa { display: flex; flex-direction: column; gap: 35px; }
-
-.sam > div, .pharmagarde > div, .lenergia > div, .formy > div, .prixa > div { display: flex; flex-direction: column; row-gap: 9px!important; width: 100%!important; padding: 35px 25px; box-shadow: 0px 0px 5px rgba(145, 145, 145, 0.309); min-height: 100vh;}
-
-.sam .concept p { padding: 90px 0; width: 90%; margin: auto; font-size: .8em; text-align: justify; line-height: 25px!important;}
-
-.sam .colors ul { list-style-type: none;  width: 100%; max-width: 400px; font-size: .8em; margin: 25px 0; overflow: hidden; border-bottom-right-radius: 25px; border-top-right-radius: 25px; border: 1px solid lightgray;}
-
-.sam .colors .container { display: flex; padding: 15px 25px;  }
-
-.sam .colors .container div:first-child { display: flex; flex-direction: column; font-size: .8em; width: 150px!important;}
-
-.sam .colors .container div:last-child { display: flex; flex-direction: column; gap: 8px; font-size: .9em;  flex: 1; }
-.sam .colors .container div:last-child span { display: flex; gap: 5px;  }
-.sam .colors .container div:last-child span > .flesh-left { flex-shrink: 0;  }
-
-.sam .colors li:nth-child(1) .container { background-color: #f3f2f9; }
-.sam .colors li:nth-child(1) .container *{ color: #45495d!important; }
-
-.sam .colors li:nth-child(2) .container { background-color: #aab2d1; }
-.sam .colors li:nth-child(2) .container *{ color: #45495d!important; }
-
-.sam .colors li:nth-child(3) .container { background-color: #606887; }
-.sam .colors li:nth-child(3) .container *{ color: #f3f2f9!important; }
-
-.sam .colors li:nth-child(4) .container { background-color: #45495d; }
-.sam .colors li:nth-child(4) .container *{ color: #f3f2f9!important; }
-
-.sam .colors li:nth-child(5) .container { background-color: #2b2b33; }
-.sam .colors li:nth-child(5) .container *{ color: #f3f2f9!important; }
-
-.typography .container > div { display: flex; flex-direction: column; }
-
-.typography .container > div:nth-of-type(1) > span:first-child { font-family: Phudu, 'sans-serif'; font-size: 2em; }
-
-.typography .container > div:nth-of-type(2) > span:first-child { font-family: 'Londrina', 'sans-serif'; font-size: 2em; }
-
-.typography .container > div:nth-of-type(3) > span:first-child { font-family: 'Lato', 'sans-serif'; font-size: 2em; }
-
-.typography .container > div > span:last-child { font-size: .8em; display: flex; align-items: center; gap: 5px; }
-
-.typography .container { margin: auto 0; display: flex; flex-direction: column; gap: 25px; }
-
-
-.sam .applications > div { display: flex; flex-wrap: wrap; gap: 25px; margin: 25px 0;} 
-
-.sam .applications img { border-radius: 8px; width: 100%;}
-
-.sam .applications > div > div{ overflow: hidden; width: auto;}
-
-.sam .item6 { display: flex; flex-wrap: wrap; gap: 5%; row-gap: 25px; }
-
-.sam .item6 > img { width: 45%;}
-
-.sam .item5 { display: none; }
-
-.pharmagarde img { width: 100%; }
-
-.lenergia .responsive { display: flex; align-items: flex-start; justify-content: center; gap: 25px; padding: 20px 0; flex-wrap: wrap; }
-
-.lenergia .responsive > img { width: 150px; border-radius: 20px;  box-shadow: 0px 0px 5px rgba(145, 145, 145, 0.309);}
-
-.prixa iframe { width: 100%;  margin: 30px auto}
 
 @media only screen and (min-width: 768px) {
     /* Home */
@@ -226,35 +127,5 @@
     #work .container a > span:last-child { font-size: .8em; }
 
     #new { font-size: .7em; }
-
-    /* Work View */
-
-    .infos { font-size: 16px;}
-
-    #work-view { padding: 400px 10% 25px 10%;}
-
-    #work-view .header { position: absolute; width: 100%; height: 350px; top:0; left: 0; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; border-top-left-radius: 0px; border-top-right-radius: 0px; }
-
-    #work-view .header > img { position: absolute; top: 50%; transform: translate(0, -50%); }
-
-    .block h1 { font-size: 3.5em }
-
-    .infos { flex-direction: row; }
-
-    .infos > div{ width: 50%;}
-
-    .sam .concept p { width: 40%;}
-
-    .block .pre-next > a { font-size: 1.2em; }
-
-    .prixa iframe { width: 80%;}
-
-    
-    .sam .item1, .sam .item2, .sam .item3 { width: 31%!important; }
-    .sam .item4 { width: 60%!important; }
-    .sam .item4 img{ height:100%}
-    .sam .item5 { width: 16%!important; display: block;}
-    .sam .item5 img{ height: 100%; }
-    .sam .item6{ flex: 1; gap: 5%; row-gap: 6px; }
 
 }
