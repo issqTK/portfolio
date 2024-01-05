@@ -23,16 +23,35 @@ Route::post('contact', [SingleController::class, 'contactPost'])->name('contact.
 
 Route::get('config', function() {
     \Artisan::call('config:cache');
-    \Artisan::call('route:cache');
-    \Artisan::call('view:cache');
+    echo 'config cached <br>';
+    sleep(0.55);
 
-    echo 'done';
+    \Artisan::call('route:cache');
+    echo 'route cached <br>';
+    sleep(0.55);
+
+    \Artisan::call('view:cache');
+    echo 'view cached <br>';
+    sleep(0.10);
+
+    echo 'DONE';
 });
 Route::get('config-release', function() {
     \Artisan::call('cache:clear');
-    \Artisan::call('config:clear');
-    \Artisan::call('route:clear');
-    \Artisan::call('view:clear');
+    echo 'cache cleared <br>';
+    sleep(0.55);
 
-    echo 'done';
+    \Artisan::call('config:clear');
+    echo 'config cleared <br>';
+    sleep(0.55);
+
+    \Artisan::call('route:clear');
+    echo 'route cleared <br>';
+    sleep(0.55);
+
+    \Artisan::call('view:clear');
+    echo 'view cleared <br>';
+    sleep(0.10);
+
+    echo 'DONE';
 });
